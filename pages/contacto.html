@@ -25,7 +25,7 @@
             <a href="./turnos.html">Turnos</a>
           </li>
           <li>
-            <a href="./tus-estudios.html">Tus estudios</a>
+            <a href="./tus-historial.html">Tus historial</a>
           </li>
           <li>
             <a href="./contacto.html">Contacto</a>
@@ -44,6 +44,44 @@
   </header>
   <main>
     <div class="contenedor">
+      <ul>
+        <li><h2>Direccion</h2></li>
+        <p>Av. 25 de mayo 1234</p>
+        <li><h2>Teléfono</h2></li>
+        <p>+54 9 3704 123456</p>
+        <li><h2>Correo</h2></li>
+        <p>cmnova@gmail.com</p>
+      </ul>
+      <aside>
+        <h2>Horarios</h2>
+        <p>
+          Lunes a viernes<br />
+          8:00hs a 20:00hs
+        </p>
+      </aside>
+      <h2>¿Tienes una consulta?</h2>
+      <form action="procesar.php" method="post">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+        <br>
+        <label for="text">Asunto</label>
+        <input type="text" name="asunto" id="asunto a tratar" />
+        <br>
+        <label for="text">Mensaje</label>
+        <input type="text" name="mensaje" id="mensaje a tratar" />
+        <br>
+        <label for="number">Contacto</label>
+        <input
+          type="number"
+          required
+          minlength="7"
+          maxlength="15"
+          placeholder="Ej:+54 9 "
+        />
+        <br>
+        <button type="submit">enviar</button>
+        <button type="reset">limpiar formulario</button>
+      </form>
 
     </div>
 
