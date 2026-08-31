@@ -45,40 +45,39 @@
   <main>
     <div class="contenedor">
       <div>
-        <h2>Solicitar turno</h2>
+        <h1>Solicitar turno</h1>
         <form action="procesar.php" method="post">
-          <h3>Nombre y Apellido</h3>
-          <label for="text"></label>
+          <label for="nombre-turno">Nombre y Apellido</label>
           <input
           type="text"
           name="nombre"
-          id="text"
+          id="nombre-turno"
           required
           minlength="4"
           maxlength="60"
           placeholder="Ej:Juan perez"
           />
-          <h3>Email</h3>
-          <label for="email"></label>
+          <label for="email-turno">Email</label>
           <input
           type="email"
-          name="email"
+          name="email-turno"
+          id="email-turno"
           placeholder="email"
           minlength="4"
           maxlength="60"
           />
-          <h3>Teléfono</h3>
-         <label for="number"></label>
+         <label for="telefono-turno">Teléfono</label>
          <input
-          type="number"
+         name="telefono-turno"
+          type="text"
+          id="telefono-turno"
           required
           minlength="7"
           maxlength="15"
           placeholder="Ej:+54 9 "
           />
-          <h3>Especialidades</h3>
-          <label for="especialidad"></label>
-          <select id="especialidad" name="especialidad" required>
+          <label for="especialidad-turno">Especialidades</label>
+          <select id="especialidad-turno" name="especialidad" required>
             <option value="" selected disabled>Seleccioná una especialidad</option>
             <option value="cardiologia">Cardiología</option>
             <option value="pediatria">Pediatría</option>
@@ -86,9 +85,8 @@
             <option value="Ginecologia">Ginecología</option>
             <option value="Atencion clinica">Atencion clinica</option>
           </select>
-          <h3>Profesional</h3>
-          <label for="profesional"></label>
-          <select>
+          <label for="profesional-turno">Profesional</label>
+          <select id="profesional-turno" name="profesional" required>
             <option value="" selected disabled>Selecciona un profesional</option>
             <optgroup label="Cardiologia">
               <option value="Dr Gimenez">Dr Gimenez</option>
@@ -126,36 +124,35 @@
               <option value="Dr Fernandez">Dr Fernandez</option>
               <option value="Dr Suarez">Dr Suarez</option>
             </optgroup>
-          </select>
-          <h3>Fecha</h3>
-          <label for="date"></label>
+          </select>      
+          <label for="fecha-turno">Fecha</label>   
           <input
           type="date"
           name="fecha"
-          id="fecha"
+          id="fecha-turno"
           required
           />
-          <h3>Turno</h3>
-          <label for="text"></label>
+          <label for="turno">Turno</label>
           <select id="turno" name="turno" required>
             <option value="Mañana">Mañana</option>
             <option value="Tarde">Tarde</option>
             <option value="Noche">Noche</option>
           </select>
-          <h3>Motivo de consulta</h3>
-          <label for="text"></label>
+          <label for="text-motivo">Motivo de consulta</label>
           <input
           type="text"
-          name="nombre"
-          id="text"
+          name="motivo"
+          id="text-motivo"
           maxlength="200"
           placeholder="Dinos brevemente el motivo de tu consulta"
           />
           <input
           type="checkbox"
           name="terminos y condiciones"
+          id="terminos"
+          required
           />
-          <label for="checkbox">Acepto los terminos y condiciones</label>
+          <label for="terminos">Acepto los terminos y condiciones</label>
           
           <button>Enviar solicitud</button>
         </form>
@@ -198,10 +195,10 @@
         </div>
       </section>
       <section>
-        <h2>Newslatter</h2>
+        <h2>Newsletter</h2>
         <p>Recibí consejos de salud y novedades</p>
-        <label>
-          <input type="email" name="email" placeholder="email"/>
+        <label for="email-newsletter">
+          <input type="email" name="email" placeholder="email" id="email-newletter"/>
         </label>
       </section>
       <div class="copyright">&copy;Centro Médico Nova</div>

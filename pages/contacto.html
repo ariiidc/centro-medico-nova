@@ -46,11 +46,11 @@
     <div class="contenedor">
       <ul>
         <li><h2>Direccion</h2></li>
-        <p>Av. 25 de mayo 1234</p>
+        <li><p>Av. 25 de mayo 1234</p></li>
         <li><h2>Teléfono</h2></li>
-        <p>+54 9 3704 123456</p>
+        <li><p>+54 9 3704 123456</p></li>
         <li><h2>Correo</h2></li>
-        <p>cmnova@gmail.com</p>
+        <li><p>cmnova@gmail.com</p></li>
       </ul>
       <aside>
         <h2>Horarios</h2>
@@ -64,15 +64,17 @@
         <label for="email">Email</label>
         <input type="email" name="email" id="email" />
         <br>
-        <label for="text">Asunto</label>
-        <input type="text" name="asunto" id="asunto a tratar" />
+        <label for="asunto-tratar">Asunto</label>
+        <input type="text" name="asunto" id="asunto-tratar" />
         <br>
-        <label for="text">Mensaje</label>
-        <input type="text" name="mensaje" id="mensaje a tratar" />
+        <label for="mensaje-tratar">Mensaje</label>
+        <input type="text" name="mensaje" id="mensaje-tratar" />
         <br>
         <label for="number">Contacto</label>
         <input
-          type="number"
+          type="text"
+          name="number"
+          id="number"
           required
           minlength="7"
           maxlength="15"

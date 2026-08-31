@@ -65,17 +65,17 @@
           minlength="8"
           maxlength="50"
         />
-        <label for=" repetir contraseña">confirma tu contraseña</label>
+        <label for="confirmar-contraseña">confirma tu contraseña</label>
         <input
           type="password"
           name="confirmar-contraseña"
-          id="confirmar-password"
-          required
+          id="confirmar-contraseña"
+          requiredword
           minlength="8"
           maxlength="50"
         />
-        <input type="checkbox" required />
-        <label for="">Aceptar terminos y condiciones</label>
+        <input type="checkbox" id="terminos-registro" required />
+        <label for="terminos-registro">Aceptar terminos y condiciones</label>
         <button type="submit">enviar</button>
         <button type="reset">limpiar formulario</button>
       </form>
@@ -120,7 +120,7 @@
         </div>
       </section>
       <section>
-        <h2>Newslatter</h2>
+        <h2>Newsletter</h2>
         <p>Recibí consejos de salud y novedades</p>
         <label>
           <input type="email" name="email" placeholder="email"/>
