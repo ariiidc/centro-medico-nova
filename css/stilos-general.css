@@ -1,0 +1,10 @@
+body {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 400;
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}

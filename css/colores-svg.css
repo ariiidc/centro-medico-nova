@@ -1,0 +1,52 @@
+:root {
+    --azul: #1e3a8a;
+    --celeste: #14b8a6;
+    --verde: #22c55e;
+    --rojo: #ef4444;
+    --amarillo: #f59e0b;
+    --violeta: #8b5cf6;
+    --blanco: white;
+}
+.color-general{
+  color:var(--celeste)
+}
+.color-botones{
+  color:var(--blanco)
+}
+.color-sangre{
+  color:var(--rojo)
+
+}
+.color-alergias{
+  color: var(--amarillo)
+}
+.color-obra-social{
+  color:var(--celeste)
+}
+.color-actualizacion{
+  color:var(--celeste)
+}
+.color-consulta{
+  color:var(--celeste)
+}
+.color-laboratorio{
+  color: var(--violeta)
+}
+.color-radiografia{
+  color: var(--azul)
+}
+.color-resonancia{
+  color:var(--verde)
+}
+.color-pendiente{
+  color:var(--rojo)
+}
+.color-en-revision{
+  color:var(--amarillo)
+}
+.color-finalizado{
+  color:var(--verde)
+}
+.informe{
+  color:var(--celeste)
+}
