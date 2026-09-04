@@ -1,186 +1,237 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es-AR">
-<head>
-  <meta name="author" content="ariana cappello" />
-  <meta name="description" content="Centro Médico Nova ofrece atención en cardiología, pediatría, oftalmología, kinesiología, ginecología y clínica médica en Formosa." />
-  <meta name="keywords" content="centro médico en Formosa,clínica en Formosa,turnos médicos en Formosa,pediatra en Formosa,cardiólogo en Formosa,oftalmólogo en Formos"/>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Centro Médico Nova | Turnos</title>
-  <link rel="stylesheet" href="../css/colores-svg.css">
-  <link rel="stylesheet" href="../css/stilos-general.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"rel="stylesheet">
-  <link rel="shortcut icon" href="../img/centro-medico-nova-favicon.svg" type="image/x-icon">
-</head>
-<body>
-  <header>
-     <div class="contenedor">
-      <img/>
-      <nav class="header-nav">
-        <ul>
-          <li>
-            <a href="../index.html">Inicio</a>
-          </li>
-          <li>
-            <a href="./profesionales.html">Profesionales</a>
-          </li>
-          <li>
-            <a href="./turnos.html">Turnos</a>
-          </li>
-          <li>
-            <a href="./Historial.html">Historial Clinico</a>
-          </li>
-          <li>
-            <a href="./contacto.html">Contacto</a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href="./iniciar-sesion.html">Iniciar sesión</a>
-          </li>
-          <li>
-            <a href="./registrarte.html">Registrarte</a>
-          </li>
-        </ul>
-      </nav>
-     </div>
-  </header>
-  <main>
-    <div class="contenedor">
-      <div>
-        <h1>Solicitar turno</h1>
-        <form action="procesar.php" method="post">
-          <label for="nombre-turno">Nombre y Apellido</label>
-          <input
-          type="text"
-          name="nombre"
-          id="nombre-turno"
-          required
-          minlength="4"
-          maxlength="60"
-          placeholder="Ej:Juan perez"
-          />
-          <label for="email-turno">Email</label>
-          <input
-          type="email"
-          name="email-turno"
-          id="email-turno"
-          placeholder="email"
-          minlength="4"
-          maxlength="60"
-          />
-         <label for="telefono-turno">Teléfono</label>
-         <input
-         name="telefono-turno"
-          type="text"
-          id="telefono-turno"
-          required
-          minlength="7"
-          maxlength="15"
-          placeholder="Ej:+54 9 "
-          />
-          <label for="especialidad-turno">Especialidades</label>
-          <select id="especialidad-turno" name="especialidad" required>
-            <option value="" selected disabled>Seleccioná una especialidad</option>
-            <option value="cardiologia">Cardiología</option>
-            <option value="pediatria">Pediatría</option>
-            <option value="oftalmologia">Oftalmología</option>
-            <option value="Ginecologia">Ginecología</option>
-            <option value="Atencion clinica">Atencion clinica</option>
-          </select>
-          <label for="profesional-turno">Profesional</label>
-          <select id="profesional-turno" name="profesional" required>
-            <option value="" selected disabled>Selecciona un profesional</option>
-            <optgroup label="Cardiologia">
-              <option value="Dr Gimenez">Dr Gimenez</option>
-              <option value="Dr Juarez">Dr Juarez</option>
-              <option value="Dr Fernandez">Dr Fernandez</option>
-              <option value="Dr Suarez">Dr Suarez</option>
-            </optgroup>
-            <optgroup label="Pediatría">
-              <option value="Dr Gimenez">Dr Gimenez</option>
-              <option value="Dr Juarez">Dr Juarez</option>
-              <option value="Dr Fernandez">Dr Fernandez</option>
-              <option value="Dr Suarez">Dr Suarez</option>
-            </optgroup>
-            <optgroup label="Oftalmología">
-              <option value="Dr Gimenez">Dr Gimenez</option>
-              <option value="Dr Juarez">Dr Juarez</option>
-              <option value="Dr Fernandez">Dr Fernandez</option>
-              <option value="Dr Suarez">Dr Suarez</option>
-            </optgroup>
-            <optgroup label="kinesiología">
-              <option value="Dr Gimenez">Dr Gimenez</option>
-              <option value="Dr Juarez">Dr Juarez</option>
-              <option value="Dr Fernandez">Dr Fernandez</option>
-              <option value="Dr Suarez">Dr Suarez</option>
-            </optgroup>
-            <optgroup label="Ginecologia">
-              <option value="Dr Gimenez">Dr Gimenez</option>
-              <option value="Dr Juarez">Dr Juarez</option>
-              <option value="Dr Fernandez">Dr Fernandez</option>
-              <option value="Dr Suarez">Dr Suarez</option>
-            </optgroup>
-            <optgroup label="Atencion clinica">
-              <option value="Dr Gimenez">Dr Gimenez</option>
-              <option value="Dr Juarez">Dr Juarez</option>
-              <option value="Dr Fernandez">Dr Fernandez</option>
-              <option value="Dr Suarez">Dr Suarez</option>
-            </optgroup>
-          </select>      
-          <label for="fecha-turno">Fecha</label>   
-          <input
-          type="date"
-          name="fecha"
-          id="fecha-turno"
-          required
-          />
-          <label for="turno">Turno</label>
-          <select id="turno" name="turno" required>
-            <option value="Mañana">Mañana</option>
-            <option value="Tarde">Tarde</option>
-            <option value="Noche">Noche</option>
-          </select>
-          <label for="text-motivo">Motivo de consulta</label>
-          <input
-          type="text"
-          name="motivo"
-          id="text-motivo"
-          maxlength="200"
-          placeholder="Dinos brevemente el motivo de tu consulta"
-          />
-          <input
-          type="checkbox"
-          name="terminos y condiciones"
-          id="terminos"
-          required
-          />
-          <label for="terminos">Acepto los terminos y condiciones</label>
-          
-          <button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send-icon lucide-send color-botones"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></svg>Enviar solicitud</button>
-        </form>
+  <head>
+    <meta name="author" content="ariana cappello" />
+    <meta
+      name="description"
+      content="Centro Médico Nova ofrece atención en cardiología, pediatría, oftalmología, kinesiología, ginecología y clínica médica en Formosa."
+    />
+    <meta
+      name="keywords"
+      content="centro médico en Formosa,clínica en Formosa,turnos médicos en Formosa,pediatra en Formosa,cardiólogo en Formosa,oftalmólogo en Formos"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Centro Médico Nova | Turnos</title>
+    <link rel="stylesheet" href="../css/colores-svg.css" />
+    <link rel="stylesheet" href="../css/stilos-general.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link
+      rel="shortcut icon"
+      href="../img/centro-medico-nova-favicon.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/main/main.css" />
+    <link rel="stylesheet" href="../css/main/turnos-main.css" />
+  </head>
+  <body>
+    <header class="header-nav">
+      <div class="contenedor">
+        <nav>
+          <img src="../img/centro-medico-nova-logo-horizontal.svg" />
+          <ul>
+            <li>
+              <a href="../index.html">Inicio</a>
+            </li>
+            <li>
+              <a href="./profesionales.html">Profesionales</a>
+            </li>
+            <li class="activo">
+              <a href="./turnos.html">Turnos</a>
+            </li>
+            <li>
+              <a href="./Historial.html">Historial Clinico</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="./iniciar-sesion.html">Iniciar sesión</a>
+            </li>
+            <li>
+              <a href="./registrarte.html">Registrarte</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </div>
-  </main>
-  <footer>
+    </header>
+    <main class="main">
+      <div class="contenedor">
+        <div class="turnos-main">
+          <h1>Solicitar turno</h1>
+          <form action="procesar.php" method="post">
+            <label for="nombre-turno">Nombre y Apellido</label>
+            <input
+              type="text"
+              name="nombre"
+              id="nombre-turno"
+              required
+              minlength="4"
+              maxlength="60"
+              placeholder="Ej:Juan perez"
+            />
+            <label for="email-turno">Email</label>
+            <input
+              type="email"
+              name="email-turno"
+              id="email-turno"
+              placeholder="email"
+              minlength="4"
+              maxlength="60"
+            />
+            <label for="telefono-turno">Teléfono</label>
+            <input
+              name="telefono-turno"
+              type="text"
+              id="telefono-turno"
+              required
+              minlength="7"
+              maxlength="15"
+              placeholder="Ej:+54 9 "
+            />
+            <label for="especialidad-turno">Especialidades</label>
+            <select id="especialidad-turno" name="especialidad" required>
+              <option value="" selected disabled>
+                Seleccioná una especialidad
+              </option>
+              <option value="cardiologia">Cardiología</option>
+              <option value="pediatria">Pediatría</option>
+              <option value="oftalmologia">Oftalmología</option>
+              <option value="Ginecologia">Ginecología</option>
+              <option value="Atencion clinica">Atencion clinica</option>
+            </select>
+            <label for="profesional-turno">Profesional</label>
+            <select id="profesional-turno" name="profesional" required>
+              <option value="" selected disabled>
+                Selecciona un profesional
+              </option>
+              <optgroup label="Cardiologia">
+                <option value="Dr Gimenez">Dr Gimenez</option>
+                <option value="Dr Juarez">Dr Juarez</option>
+                <option value="Dr Fernandez">Dr Fernandez</option>
+                <option value="Dr Suarez">Dr Suarez</option>
+              </optgroup>
+              <optgroup label="Pediatría">
+                <option value="Dr Gimenez">Dr Gimenez</option>
+                <option value="Dr Juarez">Dr Juarez</option>
+                <option value="Dr Fernandez">Dr Fernandez</option>
+                <option value="Dr Suarez">Dr Suarez</option>
+              </optgroup>
+              <optgroup label="Oftalmología">
+                <option value="Dr Gimenez">Dr Gimenez</option>
+                <option value="Dr Juarez">Dr Juarez</option>
+                <option value="Dr Fernandez">Dr Fernandez</option>
+                <option value="Dr Suarez">Dr Suarez</option>
+              </optgroup>
+              <optgroup label="kinesiología">
+                <option value="Dr Gimenez">Dr Gimenez</option>
+                <option value="Dr Juarez">Dr Juarez</option>
+                <option value="Dr Fernandez">Dr Fernandez</option>
+                <option value="Dr Suarez">Dr Suarez</option>
+              </optgroup>
+              <optgroup label="Ginecologia">
+                <option value="Dr Gimenez">Dr Gimenez</option>
+                <option value="Dr Juarez">Dr Juarez</option>
+                <option value="Dr Fernandez">Dr Fernandez</option>
+                <option value="Dr Suarez">Dr Suarez</option>
+              </optgroup>
+              <optgroup label="Atencion clinica">
+                <option value="Dr Gimenez">Dr Gimenez</option>
+                <option value="Dr Juarez">Dr Juarez</option>
+                <option value="Dr Fernandez">Dr Fernandez</option>
+                <option value="Dr Suarez">Dr Suarez</option>
+              </optgroup>
+            </select>
+            <label for="fecha-turno">Fecha</label>
+            <input type="date" name="fecha" id="fecha-turno" required />
+            <label for="turno">Turno</label>
+            <select id="turno" name="turno" required>
+              <option value="Mañana">Mañana</option>
+              <option value="Tarde">Tarde</option>
+              <option value="Noche">Noche</option>
+            </select>
+            <label for="text-motivo">Motivo de consulta</label>
+            <input
+              type="text"
+              name="motivo"
+              id="text-motivo"
+              maxlength="200"
+              placeholder="Dinos brevemente el motivo de tu consulta"
+            />
+            <div class="">
+              <input
+                type="checkbox"
+                name="terminos y condiciones"
+                id="terminos"
+                required
+              />
+              <label for="terminos">Acepto los terminos y condiciones</label>
+            </div>
+            <button class="botones">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-send-icon lucide-send color-botones"
+              >
+                <path
+                  d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"
+                />
+                <path d="m21.854 2.147-10.94 10.939" /></svg
+              >Enviar solicitud
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
       <div class="contenedor">
         <img />
-        <section>
+        <section class="footer-redes">
           <h2>Redes</h2>
           <ul>
             <li>
-              <img />
+              <img
+                src="../img/instagram-minimal.svg"
+                class="color-general"
+                width="24"
+                height="24"
+              />
               <a>Instagram</a>
             </li>
             <li>
-              <img />
+              <img
+                src="../img/facebook-minimal.svg"
+                class="color-general"
+                width="24"
+                height="24"
+              />
               <a>Facebook</a>
+            </li>
+            <li>
+              <img
+                src="../img/whatsapp-minimal.svg"
+                class="color-general"
+                width="24"
+                height="24"
+              />
+              <a>Whatsapp</a>
             </li>
           </ul>
         </section>
-        <section>
+        <section class="footer-informacion">
           <h2>Información</h2>
           <div>
             <svg
@@ -258,32 +309,17 @@
             <p>Lun a Vie 8 a 20hs</p>
           </div>
         </section>
-        <section>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-send-icon lucide-send color-general"
-          >
-            <path
-              d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"
-            />
-            <path d="m21.854 2.147-10.94 10.939" />
-          </svg>
+        <section class="footeer-Newsletter">
           <h2>Newsletter</h2>
-          <p>Recibí consejos de salud y novedades</p>
-          <label>
-            <input type="email" name="email" placeholder="email" />
-          </label>
+          <div>
+            <p>Recibí consejos de salud y novedades</p>
+            <label>
+              <input type="email" name="email" placeholder="email" />
+            </label>
+          </div>
         </section>
-        <div class="copyright">&copy;Centro Médico Nova</div>
+        <div class="footer-copyright">&copy;Centro Médico Nova</div>
       </div>
     </footer>
-</body>
+  </body>
 </html>

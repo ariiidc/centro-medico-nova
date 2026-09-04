@@ -1,0 +1,62 @@
+
+.historial-nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  background-color: var(--blanco);
+  padding: 2%;
+}
+
+.ventana-tablas > div {
+  display: none;
+}
+
+.ventana-tablas > div:target {
+  display: flex;
+  flex-direction: column;
+}
+.resumen-clinico{
+  background-color: var(--blanco);
+  text-align: center;
+  img{
+    width: 25%;
+    border-radius: 100%;
+  }
+}
+.nav-tabla{
+  width: 100%;
+  display:flex ;
+  justify-content: space-between;
+  align-items: end;
+  color: var(--azul);
+  background-color: var(--blanco);
+  button{
+    background-color: var(--celeste);
+    border-radius: 7%;
+    border: 0px;
+    color: var(--blanco);
+    display: flex;
+    padding: 5px;
+    width: fit-content;
+  }
+}
+.ventana-tablas{
+  background-color: var(--blanco);
+  display: flex;
+  table{
+    display: flexbox;
+    justify-self:center;
+    width: 100%;
+    color: var(--azul);
+  }
+  
+}
+.recetas{
+  width: 100%;
+  background-color: var(--blanco);
+}
+.nav-recetas{
+  display: flex;
+}

@@ -1,0 +1,33 @@
+.footer{
+  background-color: var(--blanco);
+  width: 100%;
+  padding-bottom :50px;
+  padding-top: 10px;
+  box-shadow: 0px -6px 16px -8px rgba(42, 40, 40, 0.22);
+}
+.footer .contenedor{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  .footer-redes{
+    grid-column: 1;
+  }
+  .footer-informacion{
+    grid-column: 2;
+  }
+  .footer-Newsletter{
+    grid-column: 3;
+  }
+  .footer-copyright{
+    grid-column: 3;
+  }
+  div{
+    display: flex;
+  }
+  li{
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+  }
+}

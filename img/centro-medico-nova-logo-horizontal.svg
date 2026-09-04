@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 1200 400"
+  role="img"
+  aria-labelledby="logo-title logo-description"
+>
+  <title id="logo-title">Centro Médico Nova</title>
+  <desc id="logo-description">
+    Cruz médica minimalista azul y celeste, con el nombre Centro Médico Nova.
+  </desc>
+
+  <!-- Cruz médica -->
+  <rect
+    x="142"
+    y="44"
+    width="88"
+    height="312"
+    rx="26"
+    fill="#1E3A8A"
+  />
+  <rect
+    x="30"
+    y="156"
+    width="312"
+    height="88"
+    rx="26"
+    fill="#14B8A6"
+  />
+
+  <!-- Nombre -->
+  <text
+    x="410"
+    y="153"
+    fill="#14B8A6"
+    font-family="Inter, Arial, sans-serif"
+    font-size="80"
+    font-weight="600"
+    letter-spacing="1"
+  >Centro Médico</text>
+  <text
+    x="405"
+    y="294"
+    fill="#14B8A6"
+    font-family="Inter, Arial, sans-serif"
+    font-size="138"
+    font-weight="800"
+    letter-spacing="5"
+  >NOVA</text>
+</svg>

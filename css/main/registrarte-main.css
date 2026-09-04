@@ -1,0 +1,45 @@
+.registrarte-main{
+  background-color:var(--blanco);
+  display: flex;
+  flex-direction: column;
+  padding: 7%;
+  border-radius: 2%;
+  h1{
+    font-size: 2.5rem;
+    padding-bottom: 20px;
+  }
+  form{
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    color: var(--azul);
+    
+  }
+  input,select,label,option{
+      color: var(--azul);
+      border: 1px solid #ccc;
+    }
+  img{
+    display: flex;
+    width: 20%;
+    border-radius: 100%;
+    place-self: center;
+  }
+}
+.main{
+  display: flex;
+  align-items: center;
+}
+.main>.contenedor{
+  display: flex;
+  justify-content: center;
+}
+.botones{
+  background-color: var(--celeste);
+  border-radius: 7%;
+  border: 0px;
+  color: var(--blanco);
+  display: flex;
+  margin: 5%;
+  padding: 10px;
+  width: fit-content;
+}

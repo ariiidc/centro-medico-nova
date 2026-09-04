@@ -1,0 +1,46 @@
+.carrusel{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button{
+  border: none;
+  background-color: var(--celeste);
+  border-radius: 100%;
+  font-size: 1.5vw;
+  min-width: 20px;
+}
+.ventana{
+  overflow: hidden;
+  flex: 1;
+  width: 100%;
+  flex: 1;
+}
+.track{
+  display: flex;
+  position: relative;
+  width: 100%;
+  a{
+    display: flex;
+    justify-content: center;
+  }
+  img{
+    max-width: 90%;
+    margin: 5%;
+    border-radius: 3%;
+    -webkit-box-shadow: 0px 0px 11px 1px rgba(32, 36, 54, 0.034); 
+    box-shadow: 0px 0px 11px 1px rgba(32, 35, 54, 0.021);
+  }
+}
+h1{
+  border-bottom: solid 3px var(--celeste);
+  padding: 5px;
+  border-radius: 5%;
+  width: fit-content;
+}
+.profesionales-main{
+  margin-top: 2%;
+  h2{
+    margin: 1%;
+  }
+}

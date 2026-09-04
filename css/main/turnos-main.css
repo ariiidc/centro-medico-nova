@@ -1,0 +1,42 @@
+.turnos-main{
+  background-color:var(--blanco);
+  display: grid;
+  padding: 7%;
+  border-radius: 2%;
+  h1{
+    font-size: 2.5rem;
+    padding-bottom: 20px;
+  }
+  form{
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    color: var(--azul);
+    
+  }
+  input,select,option{
+      color: var(--azul);
+      border: 1px solid #ccc;
+    }
+
+}
+.main{
+  display: flex;
+  align-items: center;
+}
+.main>.contenedor{
+  display: flex;
+  justify-content: center;
+}
+.botones{
+  background-color: var(--celeste);
+  border-radius: 7%;
+  border: 0px;
+  color: var(--blanco);
+  display: flex;
+  margin: 5%;
+  padding: 10px;
+}
+.terminosycondiciones{
+  display: flex;
+  place-self: center;
+}

@@ -1,10 +1,30 @@
+*{
+  margin:0px;
+  box-sizing: border-box;
+}
+.contenedor{
+  max-width: 1200px;
+  width: 100%;
+  margin:0 auto;
+  padding-inline: 20px;
+}
 body {
   font-family: "Inter", Arial, sans-serif;
   font-weight: 400;
+  background-color:rgba(222, 222, 224, 0.616);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 button,
 input,
 select,
 textarea {
   font: inherit;
+}
+main {
+  flex: 1;
+}
+h1,h2,h3,h4,h5,h6,p,a{
+  color: var(--azul);
 }
